@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "lib": ["esnext", "dom"],
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "importHelpers": true,
+      "emitDecoratorMetadata": false, 
+      "useDefineForClassFields": true,
+      "isolatedModules": true,
+      "skipLibCheck": false,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noPropertyAccessFromIndexSignature": true,
+      "noImplicitOverride": true,
+      "exactOptionalPropertyTypes": true,
+      "outDir": "./dist"
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts"],
+}
