@@ -1,10 +1,10 @@
-import express, { Express, NextFunction, Request, Response } from 'express';
+import express, {Express, Request, Response} from 'express';
 import bodyParser from 'body-parser';
-import { Static, Type } from '@sinclair/typebox';
-import { Value } from '@sinclair/typebox/value';
-import { TypeCompiler } from '@sinclair/typebox/compiler';
+import {Static, Type} from '@sinclair/typebox';
+import {Value} from '@sinclair/typebox/value';
+import {TypeCompiler} from '@sinclair/typebox/compiler';
 
-const X = Type.Object({                      
+const X = Type.Object({
   x: Type.Number(),
   y: Type.Number(),
   z: Type.Number()
@@ -29,11 +29,10 @@ app.post('/validate', (req: Request, res: Response) => {
   } else {
     const errors = [...C.Errors(input)];
     res.send(`Validation errors: ${JSON.stringify(errors)}`);
-  };
+  }
 });
 
-
-app.use(function(err: Error, _req: Request, res: Response, _next: NextFunction) {
+app.use(function (err: Error, _req: Request, res: Response) {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });

@@ -23,7 +23,7 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "start": "tsc && cd dist && node .",
+    "start-webserver": "tsc && cd dist && node .",
     "format": "prettier --write .",
     "lint": "eslint --ext .js,.ts --ignore-path .prettierignore .",
     "postinstall": "husky install"
