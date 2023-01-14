@@ -28,12 +28,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@sinclair/typebox", "npm:0.25.20"],\
+            ["@types/body-parser", "npm:1.19.2"],\
             ["@types/eslint", "npm:8.4.10"],\
             ["@types/express", "npm:4.17.15"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\
             ["@typescript-eslint/eslint-plugin", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:5.48.1"],\
             ["@typescript-eslint/parser", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:5.48.1"],\
+            ["body-parser", "npm:1.20.1"],\
             ["eslint", "npm:8.31.0"],\
             ["eslint-config-prettier", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:8.6.0"],\
             ["express", "npm:4.18.2"],\
@@ -120,6 +123,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nodelib/fs.walk", "npm:1.2.8"],\
             ["@nodelib/fs.scandir", "npm:2.1.5"],\
             ["fastq", "npm:1.15.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@sinclair/typebox", [\
+        ["npm:0.25.20", {\
+          "packageLocation": "./.yarn/cache/@sinclair-typebox-npm-0.25.20-0d7ab6ab4c-eb801fcc3a.zip/node_modules/@sinclair/typebox/",\
+          "packageDependencies": [\
+            ["@sinclair/typebox", "npm:0.25.20"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2659,12 +2671,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["ts-web-server", "workspace:."],\
+            ["@sinclair/typebox", "npm:0.25.20"],\
+            ["@types/body-parser", "npm:1.19.2"],\
             ["@types/eslint", "npm:8.4.10"],\
             ["@types/express", "npm:4.17.15"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\
             ["@typescript-eslint/eslint-plugin", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:5.48.1"],\
             ["@typescript-eslint/parser", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:5.48.1"],\
+            ["body-parser", "npm:1.20.1"],\
             ["eslint", "npm:8.31.0"],\
             ["eslint-config-prettier", "virtual:abbfb87e55a0533a9b397f784f9488edb62be79b8e6719e996f512ce53c20bbc9aac609ee3d67cf235b6d58b9837dc464debfebf373eab20f1b5adad94d30136#npm:8.6.0"],\
             ["express", "npm:4.18.2"],\
